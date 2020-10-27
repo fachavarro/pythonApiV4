@@ -8,14 +8,12 @@ class Client():
         self.doc_id = doc_id
         self.preexistence = []
 
-    *** Adds a preexistence ti a cliente
-    ***
+    *** Adds a preexistence ti a cliente ***
     def add_preexistence(self, n_Preexistence):
         self.preexistence.append(n_Preexistence)
         return len(self.preexistence) - 1
 
-    *** Adds a preexistence ti a cliente
-    ***
+    *** Adds a preexistence ti a cliente ***
     def get_preexistence(self, p_Index):
         if p_Index >= len(self.preexistence):
             return 'There is no such preexistence'
