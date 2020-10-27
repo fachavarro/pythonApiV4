@@ -26,7 +26,7 @@ class ClientTestCase(unittest.TestCase):
         self.test_client.add_preexistence('mock preexistence')
         self.test_client.add_preexistence('mock preexistence 2')
         self.test_client.add_preexistence('mock preexistence 3')
-        self.assertEqual(len(self.test_client.get_all_preexistence()), 2)
+        self.assertEqual(len(self.test_client.get_all_preexistence()), 3)
         self.test_client.remove_preexistence(1)
         self.assertEqual(len(self.test_client.get_all_preexistence()), 3)
         self.assertEqual(self.test_client.get_preexistence(1), 'mock preexistence')
